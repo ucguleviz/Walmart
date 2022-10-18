@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Walmart</string>
+    <string name="sitya_text">Sign in to your account</string>
+    <string name="email_req">E-mail address (required)</string>
+    <string name="hint_emailbox">Your E-mail</string>
+    <string name="logo_description">walmart logo</string>
+    <string name="passReq">Password (required)</string>
+    <string name="hint_passwordBox">Your password</string>
+    <string name="forgotPass">Forgot Password?</string>
+    <string name="btn_signIn">Sign In</string>
+    <string name="tv_dontHaveAnAcc">Don\'t have an account?</string>
+    <string name="btn_createAcc">Create a new account</string>
+</resources>

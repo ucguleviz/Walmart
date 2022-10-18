@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="passReq">Password (required)</string>
+    <string name="hint_passwordBox">Your password</string>
+    <string name="forgotPass">Forgot Password?</string>
+    <string name="btn_createAcc">Create a new account</string>
+</resources>
