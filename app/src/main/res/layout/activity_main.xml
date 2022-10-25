@@ -32,7 +32,7 @@
         app:layout_constraintTop_toBottomOf="@+id/activity_main_iv_walmart" />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/activity_main_cardView"
+        android:id="@+id/activity_createAcc_cardView"
         android:layout_width="370dp"
         android:layout_height="500dp"
         android:layout_gravity="fill"
@@ -40,10 +40,10 @@
         app:cardElevation="7dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/activity_main_tv_sitya"
-        app:layout_constraintVertical_bias="0.120000005">
-
+        app:layout_constraintVertical_bias="0.108">
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -64,7 +64,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
-                android:id="@+id/activity_main_et_mailbox4"
+                android:id="@+id/activity_main_et_mailbox"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -86,7 +86,7 @@
                 android:text="@string/passReq"
                 android:textColor="@color/black"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/activity_main_et_mailbox4" />
+                app:layout_constraintTop_toBottomOf="@+id/activity_main_et_mailbox" />
 
             <EditText
                 android:id="@+id/activity_main_et_password"

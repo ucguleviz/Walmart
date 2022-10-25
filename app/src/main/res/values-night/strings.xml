@@ -4,4 +4,5 @@
     <string name="hint_passwordBox">Your password</string>
     <string name="forgotPass">Forgot Password?</string>
     <string name="btn_createAcc">Create a new account</string>
+    <string name="reqFields">* required fields</string>
 </resources>

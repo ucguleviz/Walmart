@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".ShoppingCategoryActivity">
+
+    <TextView
+        android:id="@+id/activity_shopping_category_tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/shoppingCatEmail"
+        android:textColor="#1976D2"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/activity_shopping_category_tv_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="@string/shopCatWelcome"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/activity_shopping_category_tv_email"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/activity_shopping_category_tv_shopByCategories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/autour_one"
+        android:text="@string/shopCatShopByCat"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_shopping_category_tv_welcome" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewMain"
+        android:layout_width="380dp"
+        android:layout_height="570dp"
+        android:layout_marginEnd="1dp"
+        android:padding="100dp"
+        app:cardElevation="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_shopping_category_tv_shopByCategories"
+        app:layout_constraintVertical_bias="0.25">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingTop="30dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="30dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewClothing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardElevation="7dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/activity_shopping_category_ib_clothing"
+                        android:layout_width="170dp"
+                        android:layout_height="140dp"
+                        android:backgroundTint="@color/white"
+                        android:contentDescription="@string/clothingCD"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/clothing"
+                        tools:ignore="RedundantDescriptionCheck" />
+
+                    <TextView
+                        android:id="@+id/activity_shopping_category_tv_clothing"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/autour_one"
+                        android:gravity="center"
+                        android:text="@string/SBCclothing"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewElectronics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                app:cardElevation="7dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/activity_shopping_category_ib_electronics"
+                        android:layout_width="170dp"
+                        android:layout_height="140dp"
+                        android:backgroundTint="@color/white"
+                        android:contentDescription="@string/electronicsCD"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/electronics"
+                        tools:ignore="RedundantDescriptionCheck" />
+
+                    <TextView
+                        android:id="@+id/activity_shopping_category_tv_electronics"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/autour_one"
+                        android:gravity="center"
+                        android:text="@string/SBCelectronics"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewBeauty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                app:cardElevation="7dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardViewElectronics">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/activity_shopping_category_ib_beauty"
+                        android:layout_width="170dp"
+                        android:layout_height="140dp"
+                        android:backgroundTint="@color/white"
+                        android:contentDescription="@string/beautyCD"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/beauty"
+                        tools:ignore="RedundantDescriptionCheck" />
+
+                    <TextView
+                        android:id="@+id/activity_shopping_category_tv_beauty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/autour_one"
+                        android:gravity="center"
+                        android:text="@string/SBCbeauty"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewFood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardElevation="7dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardViewClothing">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/activity_shopping_category_ib_food"
+                        android:layout_width="170dp"
+                        android:layout_height="140dp"
+                        android:backgroundTint="@color/white"
+                        android:contentDescription="@string/foodCD"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/food"
+                        tools:ignore="RedundantDescriptionCheck" />
+
+                    <TextView
+                        android:id="@+id/activity_shopping_category_tv_food"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/autour_one"
+                        android:gravity="center"
+                        android:text="@string/SBCfood"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
